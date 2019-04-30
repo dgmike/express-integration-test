@@ -1,0 +1,21 @@
+{
+  "name": "express-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx supervisor server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "mocha": "^6.1.4",
+    "supertest": "^4.0.2"
+  }
+}
