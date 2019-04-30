@@ -1,5 +1,5 @@
 const NodeEnvironment = require('jest-environment-node');
-const { app } = require('./app');
+const { app } = require('../app');
 
 class TestEnv extends NodeEnvironment {
   async setup() {
