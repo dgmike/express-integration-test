@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "npx supervisor server.js",
-    "test": "jest"
+    "test": "npm run mocha; npm run jest",
+    "mocha": "mocha",
+    "jest": "jest"
   },
   "keywords": [],
   "author": "",
