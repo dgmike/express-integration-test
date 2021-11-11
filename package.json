@@ -10,8 +10,8 @@
     "mocha": "mocha",
     "jest": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["express", "example", "integration", "tdd", "jest", "supertest"],
+  "author": "Michael Granados <contato@dgmike.com.br>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
