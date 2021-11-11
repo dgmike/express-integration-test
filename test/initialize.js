@@ -1,15 +1,15 @@
 const { app } = require('../app');
 
-suiteSetup((done) => {
+exports.mochaGlobalSetup = async () => new Promise((resolve, reject) => {
   global.server = app.listen(0);
-  server.on('listening', () => {
-    console.log(`Running server for test on http://0.0.0.0:${server.address().port}\n`);
-    done();
+  global.server.on('listening', () => {
+    console.log(`Running server for test on http://0.0.0.0:${global.server.address().port}\n`);
+    resolve();
   });
 });
 
-suiteTeardown((done) => {
+exports.mochaGlobalTeardown = async () => new Promise((resolve, reject) => {
   console.log('closing server');
-  server.close();
-  done();
+  global.server.close();
+  resolve();
 });
