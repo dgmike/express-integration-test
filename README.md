@@ -14,4 +14,8 @@ Or, for jest tests:
 npm run jest
 ```
 
-Or, if required to run all tests in one command only, execute `npm test` command.
+Or, if required to run all tests in one command only:
+
+``bash
+npm test
+```
