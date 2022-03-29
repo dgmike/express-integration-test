@@ -1,22 +1,31 @@
 {
   "name": "express-integration",
   "version": "1.0.0",
-  "description": "Project using express and running integration tests using jest and mocha",
+  "description": "Project using express and running integration tests using jest and mocha.",
   "private": true,
   "main": "app.js",
   "scripts": {
     "start": "npx supervisor server.js",
     "test": "npm run mocha; npm run jest",
     "mocha": "mocha",
-    "jest": "jest"
+    "jest": "jest",
+    "coverage": "c8 npm t"
   },
-  "keywords": ["express", "example", "integration", "tdd", "jest", "supertest"],
+  "keywords": [
+    "express",
+    "example",
+    "integration",
+    "tdd",
+    "jest",
+    "supertest"
+  ],
   "author": "Michael Granados <contato@dgmike.com.br>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "c8": "^7.11.0",
     "jest": "^27.5.1",
     "mocha": "^9.2.2",
     "supertest": "^6.2.2"
